@@ -28,12 +28,12 @@ end
 
 
 
-def full?(board)
-  index = 0
-    board.all? { |e| index +=1 position_taken?(board, index) }
-end
-
 # def full?(board)
-#   board.any? {|e| e == "" || e ==}
-#
+#   index = 0
+#     board.all? { |e| index +=1 position_taken?(board, index) }
 # end
+
+def full?(board)
+  board.all? {|e| e = "X" || e = "0"}
+
+end
