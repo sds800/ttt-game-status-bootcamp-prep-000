@@ -28,5 +28,5 @@ end
 
 def full?(board)
   board.each_with_index.map {|shape, i | position_taken?(board, i) }
-  return true
+  return false
 end
