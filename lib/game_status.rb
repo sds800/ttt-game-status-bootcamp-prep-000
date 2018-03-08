@@ -17,16 +17,11 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-
     if win_combination.all? { |e| board[e] == "X" } || win_combination.all? { |e| board[e] == "O" }
-
       return win_combination
-
       else
           false
-
     end
   end
   false
 end
-# if position_taken returns true in win_combination
