@@ -30,4 +30,5 @@ def full?(board)
   if board.each_with_index.map {|shape, i | position_taken?(board, i) }
   else
     false
+  end
 end
