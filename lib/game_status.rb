@@ -27,5 +27,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|index| position_taken?(board, index[index]) }
+  board.all.with_index? {|shape, i | position_taken?(board, "#{i}") }
 end
