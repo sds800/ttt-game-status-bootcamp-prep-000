@@ -27,5 +27,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.each_with_index.map {|shape, i | position_taken?(board, i) == true }
+  if board.each_with_index.map {|shape, i | position_taken?(board, i) }
+  else
+    false
 end
