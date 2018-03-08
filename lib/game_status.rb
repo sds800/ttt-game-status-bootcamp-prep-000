@@ -28,6 +28,4 @@ end
 
 def full?(board)
    board.all? {|index| position_taken?(board, index.to_i)}
-
-  end
 end
