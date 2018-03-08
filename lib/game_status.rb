@@ -29,6 +29,12 @@ end
 
 
 def full?(board)
- board.each_with_index.map {|shape, i | position_taken?(board, i) }
+  index = 0
+    board.all? {|e| index +=1 position_taken?(board, index) }
 
 end
+
+# def full?(board)
+#   board.any? {|e| e == "" || e ==}
+#
+# end
